@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Stats preview card component</title>
+  </head>
+  <body>
+    <main class="card">
+      <section class="card__main-info">
+        <div>
+          <h1 class="card__main-info--header">
+            Get <span class="accent">insights</span> that help your business
+            grow.
+          </h1>
+          <p class="card__main-info--description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <ul class="card__main-info--statistics">
+          <li class="card__main-info--statistics-companies">
+            <span>10k+</span> <br />companies
+          </li>
+          <li class="card__main-info--statistics-templates">
+            <span>314</span> <br />templates
+          </li>
+          <li class="card__main-info--statistics-queries">
+            <span>12m+</span> <br />queries
+          </li>
+        </ul>
+      </section>
+      <section class="card__main-img">
+        <div class="filter"></div>
+        <picture class="img-container">
+          <source
+            media="(max-width: 899px)"
+            srcset="images/image-header-mobile.jpg"
+          />
+          <source
+            media="(min-width: 900px)"
+            srcset="images/image-header-desktop.jpg"
+          />
+          <img src="images/image-header-mobile.jpg" alt="Photo of team" />
+        </picture>
+
+        <!-- <picture class="img-container">
+          <source
+            media="(max-width: 900px)"
+            src="images/image-header-mobile.jpg"
+          />
+          <img src="images/image-header-desktop.jpg" alt="Photo of team" />
+        </picture> -->
+      </section>
+    </main>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
